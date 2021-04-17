@@ -1,0 +1,38 @@
+{
+    "name": "cobra-language-extention",
+    "displayName": "Cobra Language Extention",
+    "publisher": "TechStudent11",
+    "repository": {
+        "url": "https://github.com/TechStudent11/cobra-language-extension-vscode"
+    },
+    "description": "Syntax highlighting for Cobra.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "cobra",
+                "aliases": [
+                    "Cobra",
+                    "cobra"
+                ],
+                "extensions": [
+                    ".cobra"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "cobra",
+                "scopeName": "source.cobra",
+                "path": "./syntaxes/cobra.tmLanguage.json"
+            }
+        ]
+    }
+}

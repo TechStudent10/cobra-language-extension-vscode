@@ -1,0 +1,39 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Cobra",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.cobra",
+				"match": "\\b(run_python|create_function|create_var|import|say)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.cobra",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cobra",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name":"comment.line",
+			"match": "#.*"
+		}
+	},
+	"scopeName": "source.cobra"
+}
