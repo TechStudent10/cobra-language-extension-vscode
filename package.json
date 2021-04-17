@@ -6,7 +6,7 @@
         "url": "https://github.com/TechStudent11/cobra-language-extension-vscode"
     },
     "description": "Syntax highlighting for Cobra.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.55.0"
     },
